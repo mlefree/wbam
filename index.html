@@ -151,17 +151,7 @@
             color: inherit;
         }
 
-        /*
-        p {
-            position: fixed;
-            bottom: 0;
-            right: 10px;
-            line-height: 2rem;
-            text-align: right;
-            color: rgba(255, 255, 255, 0.75);
-        }
-*/
-        .body {
+        .content {
             visibility: hidden;
             /* position: fixed;
              left: 20%; */
@@ -204,7 +194,7 @@
             var hue = 303;
 
             // cache the jquery elements to prevent dom queries during the animation events
-            var $body = $(".body");
+            var $body = $(".content");
             var $word = $(".word");
             const $bigTitle = $("#bigTitle");
 
@@ -238,7 +228,6 @@
             });
         });
 
-        // the 10,000 most comment words, taken from https://goo.gl/hfjFkz
         words = ["BAM"];
     </script>
 </head>
@@ -256,6 +245,7 @@
 </h1>
 
 <span class="content">
+
     <p><span class="wonderful">1 .</span> Follow us in our youtube channel <a
             href="https://www.youtube.com/channel/UC0pZXdEkh_3q376-N9fxdyA"><img src="./res/youtube.png" height="30px"/></a> </p>
     <p><span class="wonderful">2 .</span> Enjoy our last wonderful creation :</p>
@@ -265,6 +255,7 @@
     <i>Unfortunately our next international Tour is cancelled due to crisis.</i>
     <p><b>booking _at_ wonderfulbam.com</b></p>
     <!--<img src="res/live.jpg" width="560" />-->
+
 </span>
 
 <footer>
